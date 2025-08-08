@@ -25,6 +25,12 @@ img {
     width: 100%;
 }
 
+.section-content {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
 header {
     background: #3b141c;
 }
@@ -33,14 +39,88 @@ header .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px;
 }
 
 .navbar .nav-logo .logo-text {
     color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
 }
 
 .navbar .nav-menu .nav-link {
     color: #fff;
+    padding: 10px 18px;
+    font-size: 1.12rem;
     font-weight: 500;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: #3b141c;
+    background: #f3961c;
+}
+
+.hero-section {
+    background: #3b141c;
+    min-height: 100vh;
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.hero-section .hero-details .title {
+    font-size: 2.3rem;
+    color: #f3961c;
+    font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.hero-section .hero-details .description {
+    margin: 24px 0 40px;
+    max-width: 70%;
+    font-size: 1.12rem;
+}
+
+.hero-section .hero-details .buttons {
+    display: flex;
+    gap: 23px;
+}
+
+.hero-section .hero-details .button {
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: #3b141c;
+    border-radius: 30px;
+    background: #f3961c;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.hero-section .hero-details .button:hover {
+    color: #fff;
+    border-color: #fff;
+    background: transparent;
+}
+
+.hero-section .hero-image-wrapper {
+    margin-right: 30px;
+    max-width: 500px;
 }
