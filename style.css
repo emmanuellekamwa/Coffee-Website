@@ -114,13 +114,44 @@ header .navbar {
     transition: 0.3s ease;
 }
 
-.hero-section .hero-details .button:hover {
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .contact-us {
     color: #fff;
     border-color: #fff;
     background: transparent;
 }
 
+.hero-section .hero-details .contact-us:hover {
+    color: #3b141c;
+    border-color: #f3961c;
+    background: #f3961c;
+}
+
 .hero-section .hero-image-wrapper {
     margin-right: 30px;
     max-width: 500px;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .navbar .nav-menu .nav-link {
+        display: block;
+        margin-top: 17px;
+        color: #252525;
+        font-size: 1.3rem;
+
+    }
 }
