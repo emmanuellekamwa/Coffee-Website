@@ -67,6 +67,10 @@ header .navbar {
     background: #f3961c;
 }
 
+.navbar :where(#menu-close-button, #menu-open-button) {
+    display: none;
+}
+
 .hero-section {
     background: #3b141c;
     min-height: 100vh;
@@ -133,11 +137,27 @@ header .navbar {
 }
 
 @media screen and (max-width: 900px) {
+
+    .navbar :where(#menu-close-button, #menu-open-button) {
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .navbar #menu-close-button {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    
+    .navbar #menu-open-button {
+        color: #fff;
+    }
+
     .navbar .nav-menu {
         display: block;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -300px;
         width: 300px;
         height: 100%;
         background: #fff;
@@ -152,6 +172,5 @@ header .navbar {
         margin-top: 17px;
         color: #252525;
         font-size: 1.3rem;
-
     }
 }
