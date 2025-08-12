@@ -31,6 +31,23 @@ img {
     max-width: 1300px;
 }
 
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: #f3961c;
+    margin: 10px auto 0;
+    border-radius: 8px;
+}
+
 header {
     background: #3b141c;
 }
@@ -136,6 +153,56 @@ header .navbar {
     max-width: 500px;
 }
 
+.about-section {
+    padding: 120px 0;
+    background: #faf4f5;
+}
+
+.about-section .section-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .about-image-wrapper .about-image {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-section .about-details .section-title {
+    padding: 0;
+}
+
+.about-section .about-details {
+    max-width: 50%;
+}
+
+.about-section .about-details .text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: 1.12rem;
+}
+
+.about-section .social-link-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.about-section .social-link-list .social-link {
+    color: #3b141c;
+    font-size: 1.5rem;
+    transition: 0.2s ease;
+}
+
+.about-section .social-link-list .social-link:hover {
+    color: #f3961c;
+}
+
 @media screen and (max-width: 900px) {
     body.show-mobile-menu header::before {
         content: "";
@@ -199,7 +266,7 @@ header .navbar {
         text-align: center;
     }
 
-    .hero-section .hero-details :is(.subtitle, .description) {
+    .hero-section .hero-details :is(.subtitle, .description), .about-section {
         max-width: 100%;
     }
 
@@ -210,5 +277,17 @@ header .navbar {
     .hero-section .hero-image-wrapper {
         margin-right: 0;
         max-width: 270px;
+    }
+
+    .about-section .section-content {
+        flex-direction: column-reverse;
+        gap: 70px;
+    }
+
+    .about-section .about-image-wrapper .about-image{
+        width: 100%;
+        height: 100%;
+        max-width: 250px;
+        aspect-ratio: 1;
     }
 }
