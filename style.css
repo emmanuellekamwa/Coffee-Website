@@ -242,6 +242,35 @@ header .navbar {
     font-size: 1.12rem;
 }
 
+.testimonials-section {
+    padding: 50px 0 100px;
+    background: #faf4f5;
+}
+
+.testimonials-section .testimonial {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 35px;
+}
+
+.testimonials-section .testimonial .user-image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    object-fit: cover;
+}
+
+.testimonials-section .testimonial .name {
+    font-size: 1.12rem;
+    margin-bottom: 16px;
+}
+
+.testimonials-section .testimonial .feedback {
+    line-height: 25px;
+}
 @media screen and (max-width: 1024px) {
     .menu-section .menu-list {
         gap: 60px;
@@ -350,5 +379,15 @@ header .navbar {
 
     .menu-section .menu-list .menu-item .menu-image {
         max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .menu-section .menu-list {
+        gap: 60px;
+    }
+
+    .menu-section .menu-list .menu-item {
+        width: 100%;
     }
 }
