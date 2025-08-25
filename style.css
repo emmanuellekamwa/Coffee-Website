@@ -206,6 +206,7 @@ header .navbar {
 .menu-section {
     background: #252525;
     color: #fff;
+    padding: 85px 0 90px;
 }
 
 .menu-section .menu-list {
@@ -271,6 +272,23 @@ header .navbar {
 .testimonials-section .testimonial .feedback {
     line-height: 25px;
 }
+
+.testimonials-section .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: #f3961c;
+    opacity: 1;
+}
+
+.testimonials-section .swiper-slide-button {
+    color: #f3961c;
+    transition: 0.3s ease;
+}
+
+.testimonials-section .swiper-slide-button:hover {
+    color: #3b141c;
+}
+
 @media screen and (max-width: 1024px) {
     .menu-section .menu-list {
         gap: 60px;
