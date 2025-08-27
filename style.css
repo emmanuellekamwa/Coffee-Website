@@ -248,6 +248,11 @@ header .navbar {
     background: #faf4f5;
 }
 
+.testimonials-section .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+}
+
 .testimonials-section .testimonial {
     display: flex;
     flex-direction: column;
@@ -282,6 +287,7 @@ header .navbar {
 
 .testimonials-section .swiper-slide-button {
     color: #f3961c;
+    margin-top: -50px;
     transition: 0.3s ease;
 }
 
