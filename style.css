@@ -254,6 +254,7 @@ header .navbar {
 }
 
 .testimonials-section .testimonial {
+    user-select: none;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -387,6 +388,41 @@ header .navbar {
 .contact-section .contact-form .submit-button:hover {
     background: transparent;
     color: #3b141c;
+}
+
+.footer-section {
+    background: #252525;
+    padding: 20px 0;                                                  
+}
+
+.footer-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-section :where(.copyright-text, .social-link, .policy-link) {
+    color:#fff;
+    transition: 0.2s ease;
+}
+
+.footer-section .social-link-list {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-section .social-link-list .social-link {
+    font-size: 1.5rem;
+}
+
+.footer-section .social-link-list .social-link:hover,
+.footer-section .policy-text .policy-link:hover {
+    color: #f3961c;
+}
+
+.footer-section .policy-text .separator {
+    margin: 0 5px;
+    color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -530,5 +566,10 @@ header .navbar {
 
     .testimonials-section .swiper-slide-button {
         display: none;
+    }
+
+    .footer-section .section-content {
+        flex-direction: column;
+        gap: 20px;
     }
 }
